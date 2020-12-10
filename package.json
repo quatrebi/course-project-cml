@@ -1,0 +1,15 @@
+{
+  "name": "softwarecrew",
+  "version": "1.0.0",
+  "description": "Corporate website for the \"Software Crew\" development team",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "QuatreB (Khudnitkiy Dmitriy)",
+  "license": "ISC"
+}
