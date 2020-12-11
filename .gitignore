@@ -1,10 +1,2 @@
-libs/*.js
-!libs/*.min.js
-
-css/*.scss
-css/*.sass
-
-*.map
-
 package-lock.json
 node_modules/*
