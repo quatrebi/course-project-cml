@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FOOTER>
+	<LIST>
+		<TITLE>Let's work together</TITLE>
+		<LABEL><a href="mailto:business@software.com">business@software.com</a></LABEL>
+	</LIST>
+	<LIST>
+		<TITLE>Speak to us</TITLE>
+		<LABEL><a href="tel+8(029)9571234">(29) 957 6789</a></LABEL>
+		<LABEL><a href="mailto:hello@software.com">hello@software.com</a></LABEL>
+	</LIST>
+	<LIST>
+		<TITLE>Headquarters</TITLE>
+		<LABEL>Belarus, Minsk</LABEL>
+		<LABEL>Sverdlova 13a</LABEL>
+	</LIST>
+	<COPYRIGHT>Copyright Dmitriy &#169; Khudnitsky</COPYRIGHT>
+</FOOTER>

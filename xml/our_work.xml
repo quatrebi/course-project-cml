@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OUR_WORK>
+	<CARD>
+		<TITLE>The home of DIY curtains</TITLE>
+		<CONTENT>The Curtain and Blind Company is a Perth-based window furnishings company with a business model centred on Commerce sales for made-to-measure and ready-made products. After previously stalled effort to overhaul their web presence, they approached Humaan to bring their vision of a premium eCommerce experience to life.</CONTENT>
+		<IMG>
+			<SRC>img/CB-Co-Full-2.jpg</SRC>
+			<ALT>CB-Co-Full-2.jpg</ALT>
+		</IMG>
+	</CARD>
+	<CARD>
+		<TITLE>The home of DIY curtains</TITLE>
+		<CONTENT>The Curtain and Blind Company is a Perth-based window furnishings company with a business model centred on Commerce sales for made-to-measure and ready-made products. After previously stalled effort to overhaul their web presence, they approached Humaan to bring their vision of a premium eCommerce experience to life.</CONTENT>
+		<IMG>
+			<SRC>img/Boutique-Full-1.jpg</SRC>
+			<ALT>CBoutique-Full-1.jpg</ALT>
+		</IMG>
+	</CARD>
+	<CARD>
+		<TITLE>The top 50 restaurants in WA</TITLE>
+		<CONTENT>The WA Good Food Guide celebrates Western Australia’s Top 50 restaurants, as deemed by the West Australian Good Food Guide Awards. Originally a paper publication, the Good Food Guide was ready to establish a fresh new presence, engaging its audience with a gourmet digital experience.</CONTENT>
+		<IMG>
+			<SRC>img/WAGFG-Full.jpg</SRC>
+			<ALT>WAGFG-Full.jpg</ALT>
+		</IMG>
+	</CARD>
+</OUR_WORK>

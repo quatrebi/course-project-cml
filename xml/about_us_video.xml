@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ABOUT_US_VIDEO>
+	<VIDEO>
+		<SRC>videos/index.mp4</SRC>
+		<TYPE>video/mp4</TYPE>
+		<ERROR>Sorry, your browser do not support video :(</ERROR>
+	</VIDEO>
+</ABOUT_US_VIDEO>
