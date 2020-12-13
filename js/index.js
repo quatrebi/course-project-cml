@@ -13,6 +13,10 @@ function setPoint(event) {
 			});
 		}
 
+$(document).ready(function() {
+	ScrollReveal().reveal(".card");
+});
+
 $(".card")
 	.mouseenter(setPoint).mouseleave(setPoint)
 	.tilt({
