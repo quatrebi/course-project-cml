@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <HEADER>
-	<TITLE>Software Crew</TITLE>
+	<TITLE LINK="index.html">Software Crew</TITLE>
 	<NAV>
 		<BUTTON>
 			<TITLE>Work</TITLE>
@@ -16,7 +16,7 @@
 		</BUTTON>
 		<BUTTON>
 			<TITLE>Contact</TITLE>
-			<LINK>coontact.html</LINK>
+			<LINK>contact.html</LINK>
 		</BUTTON>
 	</NAV>
 	<SHORT_DESC>We turn ideas into extraordinary digital products &amp; experiences</SHORT_DESC>

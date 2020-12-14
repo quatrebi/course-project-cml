@@ -4,7 +4,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="HEADER">
   <header id="header">
-    <h1><xsl:value-of select="TITLE"/></h1>
+    <h1>
+      <a href="{TITLE/@LINK}">
+        <xsl:value-of select="TITLE"/>
+      </a>
+    </h1>
     <nav id="header__menu">
       <ul>
         <xsl:for-each select="NAV/BUTTON">
