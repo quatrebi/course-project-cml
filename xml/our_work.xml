@@ -17,11 +17,29 @@
 		</IMG>
 	</CARD>
 	<CARD>
+		<TITLE>Illuminating light</TITLE>
+		<CONTENT>Unios design, manufacture and supply high-end, energy-efficient lighting solutions to interior designers, architects and consumers around the world. Having evolved their brand and digital strategy, they came to us to bring their new ideas to life.
+		</CONTENT>
+		<IMG>
+			<SRC>img/Unios-Hero.jpg</SRC>
+			<ALT>Unios-Hero.jpg</ALT>
+		</IMG>
+	</CARD>
+	<CARD>
 		<TITLE>The top 50 restaurants in WA</TITLE>
 		<CONTENT>The WA Good Food Guide celebrates Western Australia’s Top 50 restaurants, as deemed by the West Australian Good Food Guide Awards. Originally a paper publication, the Good Food Guide was ready to establish a fresh new presence, engaging its audience with a gourmet digital experience.</CONTENT>
 		<IMG>
 			<SRC>img/WAGFG-Full.jpg</SRC>
 			<ALT>WAGFG-Full.jpg</ALT>
+		</IMG>
+	</CARD>
+	<CARD>
+		<TITLE>By daring and by doing</TITLE>
+		<CONTENT>As a leading private school for over 1,400 students, Wesley College approached Humaan to modernise their digital presence to represent the quality, community and excellence of the school. With a focus of driving increased student enrolments, we imagined a contemporary experience that would engage and delight.
+		</CONTENT>
+		<IMG>
+			<SRC>img/WesleyHero.jpg</SRC>
+			<ALT>WesleyHero.jpg</ALT>
 		</IMG>
 	</CARD>
 </OUR_WORK>
