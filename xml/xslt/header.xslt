@@ -23,14 +23,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </nav>
     <div>
       <p><xsl:value-of select="SHORT_DESC"/></p>
-      <img>
-        <xsl:attribute name="src">
-          <xsl:value-of select="LOGO/SRC"/>
-        </xsl:attribute>
-        <xsl:attribute name="alt">
-          <xsl:value-of select="LOGO/ALT"/>
-        </xsl:attribute>
-      </img>
+      <xsl:if test="LOGO">
+        <img>
+          <xsl:attribute name="src">
+            <xsl:value-of select="LOGO/SRC"/>
+          </xsl:attribute>
+          <xsl:attribute name="alt">
+            <xsl:value-of select="LOGO/ALT"/>
+          </xsl:attribute>
+        </img>
+      </xsl:if>
     </div>
   </header>
 </xsl:template>

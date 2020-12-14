@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<HEADER>
+<HEADER__MENU>
 	<TITLE LINK="index.html">Software Crew</TITLE>
 	<NAV>
 		<BUTTON>
@@ -19,9 +19,4 @@
 			<LINK>contact.html</LINK>
 		</BUTTON>
 	</NAV>
-	<SHORT_DESC>We turn ideas into extraordinary digital products &amp; experiences</SHORT_DESC>
-	<LOGO>
-		<SRC>img/logo.svg</SRC>
-		<ALT>The logo of Software Crew</ALT>
-	</LOGO>
-</HEADER>
+</HEADER__MENU>
