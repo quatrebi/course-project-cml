@@ -5,7 +5,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/WORKS">
   <section id="our_work">
     <xsl:for-each select="CARD">
-      <xsl:if test="@favourite">
+      <xsl:if test="@featured">
         <div class="card">
           <span></span>
           <div class="img-box">

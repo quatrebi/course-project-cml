@@ -6,6 +6,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <section id="our_work">
     <xsl:for-each select="CARD">
       <div class="card">
+        <xsl:attribute name="category">
+          <xsl:for-each select="@*">
+            <xsl:value-of select="concat(name(), ' ')"/>
+          </xsl:for-each>
+        </xsl:attribute>
         <span></span>
         <div class="img-box">
           <img>
