@@ -9,11 +9,20 @@
 	<script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="libs/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="libs/tilt.jquery.min.js"></script>
+	<style type="text/css">
+		header#header {
+			height: 60vh;
+		}
+
+		header#header div p {
+			max-width: 82.5vw !important;
+		}
+	</style>
 </head>
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
 	<script type="text/javascript">
-		getNodeFromXML("header");
+		getNodeFromXMLwXSLTwMerge("team__header", "header", ["header__menu"]);
 		getNodeFromXML("footer");
 	</script>
 	<script type="text/javascript" src="js/index.js"></script>

@@ -13,7 +13,7 @@
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
 	<script type="text/javascript">
-		getNodeFromXML("header");
+		getNodeFromXMLwXSLTwMerge("index__header", "header", ["header__menu"]);
 		getNodeFromXML("about_us_video");
 		getNodeFromXMLwXSLT("works", "our_work");
 		getNodeFromXML("footer");
