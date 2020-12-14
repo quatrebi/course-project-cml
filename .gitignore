@@ -3,6 +3,7 @@ libs/*.js
 
 css/*.scss
 css/*.sass
+css/*__tablet.css
 
 *.map
 
