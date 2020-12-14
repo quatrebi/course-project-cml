@@ -10,8 +10,12 @@ function loadXMLDocument (filename) {
 }
 
 function getNodeFromXML (filename, parent = "body") {
-  let xml = loadXMLDocument(`xml/${filename}.xml`);
-  let xslt =loadXMLDocument(`xml/xslt/${filename}.xslt`);
+  getNodeFromXMLwXSLT(filename, filename, parent);
+}
+
+function getNodeFromXMLwXSLT (xmlName, xsltName, parent = "body") {
+  let xml = loadXMLDocument(`xml/${xmlName}.xml`);
+  let xslt =loadXMLDocument(`xml/xslt/${xsltName}.xslt`);
 
   if (window.ActiveXObject || xhttp.responseType === "ms-stream") {
     document.querySelector(parent).innerHTML += xml.transformNode(xslt);
