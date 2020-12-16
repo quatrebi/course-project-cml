@@ -10,6 +10,10 @@
 	<script type="text/javascript" src="libs/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="libs/tilt.jquery.min.js"></script>
 	<style type="text/css">
+		*::selection {
+			background: #FDB035 !important;
+		}
+
 		header#header {
 			height: 40vh;
 		}
@@ -25,7 +29,7 @@
 		getNodeFromXMLwXSLTwMerge("work__header", "header", ["header__menu"]);
 	</script>
 	<form name="category_selector">
-		<input type="radio" id="Featured" name="category" value="Featured">
+		<input type="radio" id="Featured" name="category" value="Featured" checked>
 		<label for="Featured">Featured</label>
 		<input type="radio" id="Websites" name="category" value="Websites">
 		<label for="Websites">Websites</label>
@@ -41,6 +45,7 @@
 		getNodeFromXML("footer");
 
 		$(":radio").change(function (event) {
+			ScrollReveal().destroy();
 			let val = event.target.value.toLowerCase();
 
 			$(".card").each(function () {
@@ -48,14 +53,7 @@
 				if (attr.includes(val)) $(this).css("display", "block");
 				else $(this).css("display", "none");
 			});
-
-			$("label").each(function () {
-				if (this.getAttribute("for") == event.target.id) {
-					$(this).css("font-weight", "bold");
-				} else {
-					$(this).css("font-weight", "inherit");
-				}
-			});
+			ScrollReveal().reveal(".card");
 		});
 	</script>
 	<script type="text/javascript" src="js/index.js"></script>

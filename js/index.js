@@ -17,7 +17,7 @@ $(document).ready(function() {
 	ScrollReveal().reveal(".card");
 });
 
-$(".card")
+$("#our_work .card")
 	.mouseenter(setPoint).mouseleave(setPoint)
 	.tilt({
 		maxTilt: 2,
