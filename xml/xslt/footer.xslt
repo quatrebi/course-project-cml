@@ -7,8 +7,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <xsl:for-each select="LIST">
         <ul>
           <h3><xsl:value-of select="TITLE"/></h3>
-          <xsl:for-each select="LABEL">
-            <li><xsl:value-of select="."/></li>
+          <xsl:for-each select="LABEL/a">
+            <li>
+              <a href="{@LINK}">
+                <xsl:value-of select="."/>
+              </a>
+            </li>
           </xsl:for-each>
         </ul>
       </xsl:for-each>
