@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM>
+	<CARD>
+		<FULLNAME>Someone Famous</FULLNAME>
+		<POST>Creative Designer</POST>
+		<IMG>
+			<SRC>team/team-1.jpg</SRC>
+			<ALT>Someone Famous - Creative Designer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Someone Famous</FULLNAME>
+		<POST>Creative Designer</POST>
+		<IMG>
+			<SRC>team/team-1.jpg</SRC>
+			<ALT>Someone Famous - Creative Designer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Someone Famous</FULLNAME>
+		<POST>Creative Designer</POST>
+		<IMG>
+			<SRC>team/team-1.jpg</SRC>
+			<ALT>Someone Famous - Creative Designer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+		<CARD>
+		<FULLNAME>Someone Famous</FULLNAME>
+		<POST>Creative Designer</POST>
+		<IMG>
+			<SRC>team/team-1.jpg</SRC>
+			<ALT>Someone Famous - Creative Designer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+</TEAM>

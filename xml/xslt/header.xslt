@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="HEADER">
+<xsl:template match="/HEADER">
   <header id="header">
     <h1>
       <a href="{TITLE/@LINK}">
@@ -22,14 +22,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </ul>
     </nav>
     <div>
-      <p><xsl:value-of select="SHORT_DESC"/></p>
-      <xsl:if test="LOGO">
+      <p><xsl:value-of select="CONTENT/SHORT_DESC"/></p>
+      <xsl:if test="CONTENT/LOGO">
         <img>
           <xsl:attribute name="src">
-            <xsl:value-of select="LOGO/SRC"/>
+            <xsl:value-of select="CONTENT/LOGO/SRC"/>
           </xsl:attribute>
           <xsl:attribute name="alt">
-            <xsl:value-of select="LOGO/ALT"/>
+            <xsl:value-of select="CONTENT/LOGO/ALT"/>
           </xsl:attribute>
         </img>
       </xsl:if>

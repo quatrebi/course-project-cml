@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONTENT>
+	<INDEX>
+		<SHORT_DESC>We turn ideas into extraordinary digital products &amp; experiences</SHORT_DESC>
+		<LOGO>
+			<SRC>img/logo.svg</SRC>
+			<ALT>The logo of Software Crew</ALT>
+		</LOGO>
+	</INDEX>
+	<WORK>
+		<SHORT_DESC>World-class digital products, idea to execution.</SHORT_DESC>
+	</WORK>
+	<ABOUT>
+		<SHORT_DESC>We design, build and ship world-class digital products for forward-thinking brands.</SHORT_DESC>
+	</ABOUT>
+	<TEAM>
+		<SHORT_DESC>We're a team of makers, thinkers, explorers and theatre singers. We approach work and play with curiosity and experimentation, using what we learn to create meaningful digital products that connect with people, just like you.</SHORT_DESC>
+	</TEAM>
+	<CONTACT>
+		<SHORT_DESC>Let's make something great together.</SHORT_DESC>
+	</CONTACT>
+</CONTENT>

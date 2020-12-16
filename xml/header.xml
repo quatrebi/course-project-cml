@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<HEADER__MENU>
+<HEADER>
 	<TITLE LINK="index.html">Software Crew</TITLE>
 	<NAV>
 		<BUTTON>
 			<TITLE>Work</TITLE>
 			<LINK>work.html</LINK>
 		</BUTTON>
-		<BUTTON>
+<!-- 		<BUTTON>
 			<TITLE>About</TITLE>
 			<LINK>about.html</LINK>
-		</BUTTON>
+		</BUTTON> -->
 		<BUTTON>
 			<TITLE>Team</TITLE>
 			<LINK>team.html</LINK>
@@ -19,4 +19,5 @@
 			<LINK>contact.html</LINK>
 		</BUTTON>
 	</NAV>
-</HEADER__MENU>
+	<CONTENT/>
+</HEADER>

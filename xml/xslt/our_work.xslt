@@ -2,9 +2,10 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="/WORKS">
+<xsl:template match="/WORK">
   <section id="our_work">
     <xsl:for-each select="CARD">
+      <xsl:sort select="TITLE"/>
       <xsl:if test="@featured">
         <div class="card">
           <span></span>

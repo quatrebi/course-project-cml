@@ -9,14 +9,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <h3><xsl:value-of select="TITLE"/></h3>
           <xsl:for-each select="LABEL/a">
             <li>
-              <a href="{@LINK}">
+              <a href="{@href}">
                 <xsl:value-of select="."/>
               </a>
             </li>
           </xsl:for-each>
         </ul>
       </xsl:for-each>
-      <h4><xsl:value-of select="COPYRIGHT"/></h4>
+      <h4><xsl:value-of select="COPYRIGHT" disable-output-escaping="yes"/></h4>
   </footer>
 </xsl:template>
 

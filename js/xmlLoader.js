@@ -1,50 +1,44 @@
 let xhttp;
 
 function loadXMLDocument (filename) {
-  xhttp = window.ActiveXObject ? new ActiveXObject("Msxml2.XMLHTTP") : new XMLHttpRequest();
-  xhttp.open("GET", filename, false);
-  try { xhttp.responseType = "ms-stream"; }
-  catch (err) {}
-  xhttp.send('');
-  return xhttp.responseXML;
+    xhttp = window.ActiveXObject ? new ActiveXObject("Msxml2.XMLHTTP") : new XMLHttpRequest();
+    xhttp.open("GET", filename, false);
+    xhttp.setRequestHeader("Content-type", "text/xml");
+    try { xhttp.responseType = "ms-stream"; } catch (err) {}
+    xhttp.send();
+    return xhttp.responseXML;
+}
+
+function applyXSLTtoXML (xmlName, xsltName) {
+    if (typeof xmlName == "string") {
+        if (xmlName.isArray) xsltName = xmlName[1], xmlName = xmlName[1];
+        else if (xsltName == undefined) xsltName = xmlName;
+        var xml = loadXMLDocument(`xml/${xmlName}.xml`);
+    } else xml = xmlName;
+
+    try {
+        let xslt = loadXMLDocument(`xml/xslt/${xsltName}.xslt`);
+        if (window.ActiveXObject || xhttp.responseType === "ms-stream") {
+            return xml.transformNode(xslt);
+        }
+        else if (document.implementation && document.implementation.createDocument) {
+            let xsltProc = new XSLTProcessor();
+            xsltProc.importStylesheet(xslt);
+            return xsltProc.transformToFragment(xml, document);
+        }
+    } catch { return xml; }
 }
 
 function mergeXMLs (mainFile, mergeFiles = []) {
   let xml = loadXMLDocument(`xml/${mainFile}.xml`);
-  for (let i = 0; i < mergeFiles.length; i++) {
-    let merge = loadXMLDocument(`xml/${mergeFiles[i]}.xml`);
-    xml.querySelector(mergeFiles[i].toUpperCase()).outerHTML = merge.documentElement.innerHTML;
-  }
-  return xml;
-}
+  mergeFiles.forEach(function (mFile) {
+    if (typeof mFile == "object") {
+        var node = mFile[1].toUpperCase(), mFile = mFile[0];
+    }
+    let mXML = applyXSLTtoXML(mFile);
+    xml.querySelector(mXML.documentElement.tagName).innerHTML =
+        (node ? mXML.querySelector(node).innerHTML : mXML.documentElement.innerHTML);
 
-function getNode (xml, xslt, parent = "body") {
-  if (window.ActiveXObject || xhttp.responseType === "ms-stream") {
-    document.querySelector(parent).innerHTML += xml.transformNode(xslt);
-  }
-  else if (document.implementation && document.implementation.createDocument) {
-    let xsltProc = new XSLTProcessor();
-    xsltProc.importStylesheet(xslt);
-    document.querySelector(parent).appendChild(xsltProc.transformToFragment(xml, document));
-  }
-}
-
-function getNodeFromXML (filename, parent = "body") {
-  getNodeFromXMLwXSLT(filename, filename, parent);
-}
-
-function getNodeFromXMLwXSLT (xmlName, xsltName, parent = "body") {
-  let xml = loadXMLDocument(`xml/${xmlName}.xml`);
-  let xslt = loadXMLDocument(`xml/xslt/${xsltName}.xslt`);
-  getNode(xml, xslt, parent);
-}
-
-function getNodeFromXMLwMerge (mainFile, mergeFiles = [], parent = "body") {
-  let xslt = loadXMLDocument(`xml/xslt/${mainFile}.xslt`);
-  getNode(mergeXMLs(mainFile, mergeFiles), xslt, parent);
-}
-
-function getNodeFromXMLwXSLTwMerge (mainFile, xsltName, mergeFiles = [], parent = "body") {
-  let xslt = loadXMLDocument(`xml/xslt/${xsltName}.xslt`);
-  getNode(mergeXMLs(mainFile, mergeFiles), xslt, parent);
+  });
+  return applyXSLTtoXML(xml, mainFile);
 }
