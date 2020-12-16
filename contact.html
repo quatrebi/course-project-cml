@@ -5,25 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Let's make something great together | Software Crew</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	<script type="text/javascript" src="libs/p5.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="libs/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="libs/tilt.jquery.min.js"></script>
-	<style type="text/css">
-		header#header {
-			height: 26vh;
-		}
-		
-		header#header div p {
-			max-width: 72.5vw;
-		}
-	</style>
 </head>
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
-	<script type="text/javascript">
-		getNodeFromXMLwXSLTwMerge("contact__header", "header", ["header__menu"]);
+	<script type="text/javascript">	
+		document.body.appendChild(mergeXMLs("header", [["header__content", "contact"]]))
+		document.body.appendChild(applyXSLTtoXML("contact"));
 	</script>
 	<form name="contact_us">
 		<fieldset>
@@ -35,13 +28,13 @@
 			<input type="text" name="yourcompanyname" id="yourcompanyname" placeholder="Widgets Inc">
 			<label for="email">How shall we contact you?</label>
 			<div type="text">
-				<input type="text" name="email" id="email" placeholder="Email address">
-				<input type="text" name="phone" id="phone" placeholder="Phone Number">
+				<input type="email" name="email" id="email" placeholder="Email address">
+				<input type="phone" name="phone" id="phone" placeholder="Phone Number">
 			</div>
 		</fieldset>
 		<fieldset>
 			<legend>What can we help you with?</legend>
-			<p>Nice to meet you! Select all that apply.</p>
+			<p>What can we help you with?</p>
 			<div type="checkbox">
 				<input type="checkbox" name="projects" value="web" id="web">
 				<label for="web">
@@ -88,7 +81,7 @@
 		<button type="submit">Submit</button>
 	</form>
 	<script type="text/javascript">
-		getNodeFromXML("footer");
+		document.body.appendChild(applyXSLTtoXML("footer"));
 	</script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>

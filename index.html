@@ -11,17 +11,17 @@
 	<script type="text/javascript" src="libs/tilt.jquery.min.js"></script>
 	<style>
 		*::selection {
-			background: #f05644;
+			background: var(--red-color);
 		}
 	</style>
 </head>
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
 	<script type="text/javascript">
-		getNodeFromXMLwXSLTwMerge("index__header", "header", ["header__menu"]);
-		getNodeFromXML("about_us_video");
-		getNodeFromXMLwXSLT("works", "our_work");
-		getNodeFromXML("footer");
+		document.body.appendChild(mergeXMLs("header", [["header__content", "index"]]))
+		document.body.appendChild(applyXSLTtoXML("about_us_video"));
+		document.body.appendChild(applyXSLTtoXML("work","our_work"));
+		document.body.appendChild(applyXSLTtoXML("footer"));
 	</script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>

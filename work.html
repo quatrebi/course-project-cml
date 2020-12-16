@@ -5,44 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>World-class digital products, idea to execution | Software Crew</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/work.css">
 	<script type="text/javascript" src="libs/p5.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="libs/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="libs/tilt.jquery.min.js"></script>
-	<style type="text/css">
-		*::selection {
-			background: #FDB035 !important;
-		}
-
-		header#header {
-			height: 40vh;
-		}
-
-		header#header div p {
-			max-width: 72.5vw !important;
-		}
-	</style>
 </head>
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
 	<script type="text/javascript">
-		getNodeFromXMLwXSLTwMerge("work__header", "header", ["header__menu"]);
-	</script>
-	<form name="category_selector">
-		<input type="radio" id="Featured" name="category" value="Featured" checked>
-		<label for="Featured">Featured</label>
-		<input type="radio" id="Websites" name="category" value="Websites">
-		<label for="Websites">Websites</label>
-		<input type="radio" id="eCommerce" name="category" value="eCommerce">
-		<label for="eCommerce">eCommerce</label>
-		<input type="radio" id="Apps" name="category" value="Apps">
-		<label for="Apps">Apps</label>
-		<input type="radio" id="UIUX" name="category" value="UIUX">
-		<label for="UIUX">UI & UX</label>
-	</form>
-	<script type="text/javascript">
-		getNodeFromXML("works");
-		getNodeFromXML("footer");
+		document.body.appendChild(mergeXMLs("header", [["header__content", "work"]]))
+		document.body.appendChild(applyXSLTtoXML("work"));
+		document.body.appendChild(applyXSLTtoXML("footer"));
 
 		$(":radio").change(function (event) {
 			ScrollReveal().destroy();
