@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>World-class digital products, idea to execution | Software Crew</title>
+	<link rel="shortcut icon" href="img/logo.ico" type="image/ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/work.css">
 	<script type="text/javascript" src="libs/p5.min.js"></script>
@@ -14,22 +15,31 @@
 <body>
 	<script type="text/javascript" src="js/xmlLoader.js"></script>
 	<script type="text/javascript">
+		/* Загрузка блока header из XML-документов */
 		document.body.appendChild(mergeXMLs("header", [["header__content", "work"]]))
+		/* Загрузка блока со всеми работами */
 		document.body.appendChild(applyXSLTtoXML("work"));
+		/* Загрузка блока footer */
 		document.body.appendChild(applyXSLTtoXML("footer"));
 
+		/* Применяем к элементу с типом "radio" событие на проверку изменения элемента */
 		$(":radio").change(function (event) {
+			/* Уничтожаем эффект появления для дальнейшей корректной его работы*/
 			ScrollReveal().destroy();
 			let val = event.target.value.toLowerCase();
 
+			/* Применяем для каждой "карточки" CSS-свойства "dispaly" с нужным значением */
 			$(".card").each(function () {
 				let attr = this.getAttribute("category").toLowerCase();
+				/*  Проверяем наличие необходимой категории */
 				if (attr.includes(val)) $(this).css("display", "block");
 				else $(this).css("display", "none");
 			});
+			/* Возвращаем эффект появления */
 			ScrollReveal().reveal(".card");
 		});
 	</script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
 </body>
 </html>

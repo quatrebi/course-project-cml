@@ -6,6 +6,7 @@ css/*.sass
 css/_*
 
 *.map
+*.docx
 
 package-lock.json
 node_modules/*
