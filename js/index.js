@@ -1,30 +1,29 @@
-Math.__proto__.range = function (min, max) {
-	return Math.random() * (max - min) + min;
+function setPoint(event) {
+	/* Метод для установки позиции элемента */
+	let enterPoint = {
+		x: event.pageX - $(this).offset().left,
+		y: event.pageY - $(this).offset().top
+	};
+	$(this).find("span").css({
+		top: enterPoint.y,
+		left: enterPoint.x
+	});
 }
 
-function setPoint(event) {
-			let enterPoint = {
-				x: event.pageX - $(this).offset().left,
-				y: event.pageY - $(this).offset().top
-			};
-			$(this).find("span").css({
-				top: enterPoint.y,
-				left: enterPoint.x
-			});
-		}
-
 $(document).ready(function() {
+	/* Применение эффекта "появления"" */
 	ScrollReveal().reveal(".card");
 });
 
-$("#our_work .card")
-	.mouseenter(setPoint).mouseleave(setPoint)
-	.tilt({
-		maxTilt: 2,
-	    glare: true,
-		maxGlare: .25,
-		scale: 1.05
-	});
+/* Обрабатываем события вхождения мыши */
+$("#our_work .card").mouseenter(setPoint).mouseleave(setPoint);
+/* Применение эффекта параллакса */
+$(".card").tilt({
+	maxTilt: 2,
+    glare: true,
+	maxGlare: .25,
+	scale: 1.05
+});
 
 let lastScrollTop = 0;
 $(window).scroll(function() {
