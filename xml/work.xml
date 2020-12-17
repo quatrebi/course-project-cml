@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WORK>
+	<CARD Websites="" Apps="">
+		<TITLE>Buy your home with confidence</TITLE>
+		<CONTENT>Resolve Finance is an Australian finance broker specialising in home loans, conveyancing and financial planning. With their previous website critically underperforming, Humaan were tasked with delivering a world-class digital experience that would contribute to conversion and revenue growth.</CONTENT>
+		<IMG>
+			<SRC>img/work/resolve.jpg</SRC>
+			<ALT>resolve.jpg</ALT>
+		</IMG>
+	</CARD>
+	<CARD Websites="" eCommerce="">
+		<TITLE>Kingdom of the Quokka</TITLE>
+		<CONTENT>The Rottnest Wildlife website provides school age children with an engaging and educational experience to learn all about the flora and fauna on the island.</CONTENT>
+		<IMG>
+			<SRC>img/work/rottnestwildnest-hero.jpg</SRC>
+			<ALT>rottnestwildnest-hero.jpg</ALT>
+		</IMG>
+	</CARD>
 	<CARD featured="" eCommerce="">
 		<TITLE>The home of DIY curtains</TITLE>
 		<CONTENT>The Curtain and Blind Company is a Perth-based window furnishings company with a business model centred on Commerce sales for made-to-measure and ready-made products. After previously stalled effort to overhaul their web presence, they approached Humaan to bring their vision of a premium eCommerce experience to life.</CONTENT>
@@ -25,7 +41,7 @@
 			<ALT>Unios-Hero.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD featured="" Websites="">
+	<CARD featured="" Websites="" eCommerce="">
 		<TITLE>The top 50 restaurants in WA</TITLE>
 		<CONTENT>The WA Good Food Guide celebrates Western Australia’s Top 50 restaurants, as deemed by the West Australian Good Food Guide Awards. Originally a paper publication, the Good Food Guide was ready to establish a fresh new presence, engaging its audience with a gourmet digital experience.</CONTENT>
 		<IMG>
@@ -41,7 +57,7 @@
 			<ALT>WesleyHero.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD featured="" Apps="">
+	<CARD featured="" Apps="" eCommerce="">
 		<TITLE>Music for social change</TITLE>
 		<CONTENT>Mideast Youth promotes freedom of expression and social justice through digital engagement in the Middle East and North Africa. Their music app, Mideast Tunes, is the ultimate platform for discovering underground musicians in the region.</CONTENT>
 		<IMG>
@@ -49,7 +65,7 @@
 			<ALT>met.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD featured="" Websites="">
+	<CARD featured="" Websites="" eCommerce="">
 		<TITLE>The digital performance agency</TITLE>
 		<CONTENT>They made their mark as a bold brand with a strategic approach. Today Bonfire are recognised as one of Australia’s leading digital performance agencies, passionate about data and driven by results.</CONTENT>
 		<IMG>
@@ -57,7 +73,7 @@
 			<ALT>Bonfire-1.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD featured="" Websites="">
+	<CARD featured="" Websites="" UIUX="" Apps="">
 		<TITLE>Journey through West Australian history</TITLE>
 		<CONTENT>The Golden Pipeline Heritage Trail is a historical drive trail through the heart of Western Australia. The website is a detailed interactive guidebook, inviting visitors to engage directly with the stories of the Goldfields Water Supply Scheme.</CONTENT>
 		<IMG>
@@ -65,7 +81,7 @@
 			<ALT>goldenpipeline.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD Websites="">
+	<CARD Websites="" UIUX="">
 		<TITLE>Taking the work out of creating great workplaces</TITLE>
 		<CONTENT>Facilitate approached Humaan to reimagine and revitalise their online presence to showcase a refreshed brand and growing reputation as a world-class commercial workspace specialist.</CONTENT>
 		<IMG>
@@ -73,7 +89,7 @@
 			<ALT>facilitate-hero.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD Websites="">
+	<CARD Websites="" Apps="">
 		<TITLE>WA's most trusted apartment developer</TITLE>
 		<CONTENT>Finbar is WA’s largest and most trusted property developer. Keen to reach a discerning audience of homebuyers and investors, they asked Humaan to create a suite of digital brochures, each promoting the unique qualities of their available apartments.</CONTENT>
 		<IMG>
@@ -81,23 +97,7 @@
 			<ALT>finbar-2048x1117.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD Websites="">
-		<TITLE>Buy your home with confidence</TITLE>
-		<CONTENT>Resolve Finance is an Australian finance broker specialising in home loans, conveyancing and financial planning. With their previous website critically underperforming, Humaan were tasked with delivering a world-class digital experience that would contribute to conversion and revenue growth.</CONTENT>
-		<IMG>
-			<SRC>img/work/resolve.jpg</SRC>
-			<ALT>resolve.jpg</ALT>
-		</IMG>
-	</CARD>
-	<CARD Websites="">
-		<TITLE>Kingdom of the Quokka</TITLE>
-		<CONTENT>The Rottnest Wildlife website provides school age children with an engaging and educational experience to learn all about the flora and fauna on the island.</CONTENT>
-		<IMG>
-			<SRC>img/work/rottnestwildnest-hero.jpg</SRC>
-			<ALT>rottnestwildnest-hero.jpg</ALT>
-		</IMG>
-	</CARD>
-	<CARD Websites="">
+	<CARD Websites="" Apps="">
 		<TITLE>Start your dream home journey</TITLE>
 		<CONTENT>Limitless are a boutique luxury builder in Western Australia. They came to us for a new website that could offer an outstanding user experience and convey the essence of their brand and the high quality of their work.</CONTENT>
 		<IMG>
@@ -105,7 +105,7 @@
 			<ALT>limitless-1.jpg</ALT>
 		</IMG>
 	</CARD>
-	<CARD Websites="">
+	<CARD Websites="" UIUX="">
 		<TITLE>Inspiring girls to become extraordinary women</TITLE>
 		<CONTENT>Penrhos College is more than a school for girls. It’s a vibrant and thriving community of around 1,200 students and their families, 250 staff and more than 8,000 alumni.</CONTENT>
 		<IMG>

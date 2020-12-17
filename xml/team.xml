@@ -1,44 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEAM>
 	<CARD>
-		<FULLNAME>Someone Famous</FULLNAME>
-		<POST>Creative Designer</POST>
+		<FULLNAME>Tobias Jenkins</FULLNAME>
+		<POST>IT Director</POST>
 		<IMG>
-			<SRC>team/team-1.jpg</SRC>
-			<ALT>Someone Famous - Creative Designer</ALT>
+			<SRC>team/team-1.jpeg</SRC>
+			<ALT>Tobias Jenkins - IT Director</ALT>
 		</IMG>
 		<SOCIAL>facebook</SOCIAL>
 		<SOCIAL>instagram</SOCIAL>
 		<SOCIAL>twitter</SOCIAL>
 	</CARD>
 	<CARD>
-		<FULLNAME>Someone Famous</FULLNAME>
-		<POST>Creative Designer</POST>
+		<FULLNAME>Willis Jones</FULLNAME>
+		<POST>IT Designer</POST>
 		<IMG>
-			<SRC>team/team-1.jpg</SRC>
-			<ALT>Someone Famous - Creative Designer</ALT>
+			<SRC>team/team-9.jpeg</SRC>
+			<ALT>Willis Jones - IT Designer</ALT>
 		</IMG>
 		<SOCIAL>facebook</SOCIAL>
 		<SOCIAL>instagram</SOCIAL>
 		<SOCIAL>twitter</SOCIAL>
 	</CARD>
 	<CARD>
-		<FULLNAME>Someone Famous</FULLNAME>
-		<POST>Creative Designer</POST>
+		<FULLNAME>Boone Hernandez</FULLNAME>
+		<POST>IT Analyst</POST>
 		<IMG>
-			<SRC>team/team-1.jpg</SRC>
-			<ALT>Someone Famous - Creative Designer</ALT>
+			<SRC>team/team-4.jpeg</SRC>
+			<ALT>Boone Hernandez - IT Analyst</ALT>
 		</IMG>
 		<SOCIAL>facebook</SOCIAL>
 		<SOCIAL>instagram</SOCIAL>
 		<SOCIAL>twitter</SOCIAL>
 	</CARD>
-		<CARD>
-		<FULLNAME>Someone Famous</FULLNAME>
-		<POST>Creative Designer</POST>
+	<CARD>
+		<FULLNAME>Kingsley Watson</FULLNAME>
+		<POST>Senior System Designer</POST>
 		<IMG>
-			<SRC>team/team-1.jpg</SRC>
-			<ALT>Someone Famous - Creative Designer</ALT>
+			<SRC>team/team-2.jpeg</SRC>
+			<ALT>Kingsley Watson - Senior System Designer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Patton Garcia</FULLNAME>
+		<POST>Senior Web Developer</POST>
+		<IMG>
+			<SRC>team/team-3.jpeg</SRC>
+			<ALT>Patton Garcia - Senior Web Developer</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Richard Jones</FULLNAME>
+		<POST>Project Manager</POST>
+		<IMG>
+			<SRC>team/team-5.jpeg</SRC>
+			<ALT>Richard Jones - Project Manager</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Richard Jones</FULLNAME>
+		<POST>Software Architect</POST>
+		<IMG>
+			<SRC>team/team-6.jpeg</SRC>
+			<ALT>Richard Jones- Software Architect</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Willis Sanchez</FULLNAME>
+		<POST>System(s) Administrator</POST>
+		<IMG>
+			<SRC>team/team-7.jpeg</SRC>
+			<ALT>Willis Sanchez - System(s) Administrator</ALT>
+		</IMG>
+		<SOCIAL>facebook</SOCIAL>
+		<SOCIAL>instagram</SOCIAL>
+		<SOCIAL>twitter</SOCIAL>
+	</CARD>
+	<CARD>
+		<FULLNAME>Urias Roberts</FULLNAME>
+		<POST>Technical Support Engineer</POST>
+		<IMG>
+			<SRC>team/team-8.jpeg</SRC>
+			<ALT>Urias Roberts - Technical Support Engineer</ALT>
 		</IMG>
 		<SOCIAL>facebook</SOCIAL>
 		<SOCIAL>instagram</SOCIAL>
